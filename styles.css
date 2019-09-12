@@ -6,4 +6,20 @@ h1 {
   font-style: italic;
   text-align: center;
   text-transform: uppercase;
+  font-size: 40px;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-align: center;
+}
+
+img {
+}
+
+#back2Top {
+  text-align: center;
 }
