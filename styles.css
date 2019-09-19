@@ -1,6 +1,7 @@
 /*** GENERAL ***/
 html {
   background-color: lightgrey;
+  text-align: center;
 }
 /*** BODY ***/
 h1 {
@@ -11,10 +12,10 @@ h1 {
   font-size: 40px;
 }
 
-p {
-  text-align: center;
+.homenav {
+  margin: 10px auto;
+  display: block;
 }
-
 #back2Top {
   text-align: center;
 }
