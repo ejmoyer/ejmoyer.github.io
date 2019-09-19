@@ -5,8 +5,7 @@ html {
 }
 /*** BODY ***/
 h1 {
-  font-family: fantasy, serif;
-  font-style: italic;
+  font-family: serif, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 40px;
@@ -21,6 +20,7 @@ h1 {
 }
 
 .port-list {
+  text-align: initial;
   list-style-type: upper-roman;
   font-family: cursive, sans-serif;
   color: purple;
