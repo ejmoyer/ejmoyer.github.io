@@ -1,28 +1,21 @@
 /*** GENERAL ***/
 html {
-  background-color: lightgrey;
-  text-align: center;
   box-sizing: border-box;
 }
 /*** BODY ***/
-h1 {
-  font-family: serif, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 40px;
-}
-
-.homenav {
-  margin: 10px auto;
+.header {
   display: block;
-}
-#back2Top {
+  height: 15%;
+  background-color: #ad87f7;
   text-align: center;
 }
 
-.port-list {
-  text-align: initial;
-  list-style-type: upper-roman;
-  font-family: cursive, sans-serif;
-  color: purple;
+.navbuttons {
+  display: inline-block;
+  border: 3px solid black;
+  padding: 1em;
+}
+
+.body {
+  display: block;
 }
