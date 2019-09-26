@@ -1,5 +1,7 @@
 /*** GENERAL ***/
 html {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 /*** BODY ***/
@@ -23,9 +25,11 @@ body {
 
 .header nav a {
   display: inline-block;
+  text-decoration: none;
+  width: 25%;
   border: 2px solid black;
   padding: 5px;
-  margin: 5px;
+  margin: 10px auto;
 }
 
 .article {
