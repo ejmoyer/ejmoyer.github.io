@@ -1,15 +1,10 @@
 /*** GENERAL ***/
 html {
   margin: 0;
-  padding: 0;
+  padding: 2em;
   box-sizing: border-box;
 }
 /*** BODY ***/
-body {
-  background-color: grey;
-  width: 100%;
-}
-
 .header {
   display: flex;
   flex-direction: column;
