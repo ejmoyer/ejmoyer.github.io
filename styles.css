@@ -1,13 +1,51 @@
 /*** GENERAL ***/
 * {
   box-sizing: border-box;
-  border: thin solid black;
+  /***border: thin solid black;***/
 }
 /*** BODY ***/
+body {
+  font-family: "Ebrima", sans-serif;
+}
+
 .header {
   display: flex;
   flex-direction: column;
-  height: 8em;
-  background-color: #ad87f7;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid lightgrey;
+}
+
+.header h1 {
+  font-family: "Ebrima", sans-serif;
+  text-transform: uppercase;
+}
+
+.header nav a {
+  display: inline-block;
+  width: 10em;
+  padding: 1em;
+  margin: 0 0 2em 0;
+  border: 3px solid lightgrey;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  background-color: lightgrey;
+}
+
+.body {
+  border: 5px solid lightgrey;
+  margin: 1em;
+  padding: 1em;
   text-align: center;
 }
+
+/*** Portfolio List ***/
+
+.unordered li {
+  padding: 1em 0 1em 0;
+  list-style-type: none;
+}
+
+/*** Portfolio Section End ***/
