@@ -6,6 +6,8 @@
 /*** BODY ***/
 body {
   font-family: "Ebrima", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .header {
