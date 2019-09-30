@@ -32,6 +32,11 @@ body {
   text-transform: uppercase;
   color: black;
   background-color: lightgrey;
+  transition: background-color .5s;
+}
+
+nav a:hover {
+  background-color: darkgrey;
 }
 
 .body {
