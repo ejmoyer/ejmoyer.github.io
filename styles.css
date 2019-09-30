@@ -1,7 +1,7 @@
 /*** GENERAL ***/
 * {
   box-sizing: border-box;
-  /***border: thin solid black;***/
+  /***border: thin solid red;***/
 }
 /*** BODY ***/
 body {
@@ -55,4 +55,22 @@ nav a:hover {
   list-style-type: none;
 }
 
+.sidebar {
+  margin: 1em 0 0 0;
+  padding: 1em;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 3px dotted lightgrey;
+}
+
+.sidebar ol {
+  list-style-type: none;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
 /*** Portfolio Section End ***/
