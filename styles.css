@@ -55,17 +55,21 @@ nav a:hover {
   list-style-type: none;
 }
 
-.sidebar {
-  margin: 1em 0 0 0;
-  padding: 1em;
-  display: flex;
-  width: 30%;
-  flex-direction: column;
-  align-items: flex-start;
-  border: 3px dotted lightgrey;
+aside {
+    border: 3px dotted lightgrey;
+    margin-top: 1em;
+    padding: 0 0 0 1em;
+    width: 30%;
 }
 
-.sidebar ol {
+.sidebar {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar li {
   list-style-type: none;
 }
 
