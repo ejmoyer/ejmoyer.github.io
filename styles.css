@@ -1,13 +1,18 @@
 /*** GENERAL ***/
-* {
-  box-sizing: border-box;
-  /***border: thin solid red;***/
-}
+*,
+*::before,
+ *::after {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+ }
+ 
 /*** BODY ***/
-body {
-  font-family: "Ebrima", sans-serif;
-  background-color: black;
-  color: white;
+.body {
+  border: 5px solid lightgrey;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
 }
 
 .header {
@@ -37,30 +42,18 @@ body {
   transition: background-color .5s;
 }
 
+body {
+  font-family: "Ebrima", sans-serif;
+  background-color: black;
+  color: white;
+}
+
 nav a:hover {
   background-color: darkgrey;
 }
 
-.body {
-  border: 5px solid lightgrey;
-  margin: 1em;
-  padding: 1em;
-  text-align: center;
-}
 
 /*** Portfolio List ***/
-
-.unordered li {
-  padding: 1em 0 1em 0;
-  list-style-type: none;
-}
-
-aside {
-    border: 3px dotted lightgrey;
-    margin-top: 1em;
-    padding: 0 0 0 1em;
-    width: 30%;
-}
 
 .sidebar {
   padding: 1em;
@@ -77,4 +70,15 @@ aside {
   color: white;
   text-decoration: none;
 }
-/*** Portfolio Section End ***/
+
+.unordered li {
+  padding: 1em 0 1em 0;
+  list-style-type: none;
+}
+
+aside {
+    border: 3px dotted lightgrey;
+    margin-top: 1em;
+    padding: 0 0 0 1em;
+    width: 30%;
+}
