@@ -16,23 +16,17 @@
 }
 
 .header {
+  margin: 1em;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   border: 5px solid lightgrey;
 }
 
-.header h1 {
-  font-family: "Ebrima", sans-serif;
-  text-transform: uppercase;
-}
-
-.header nav a {
-  display: inline-block;
+.header a {
   width: 10em;
   padding: 1em;
-  margin: 0 0 2em 0;
+  margin: 2em 0 2em 0;
   border: 3px solid lightgrey;
   text-align: center;
   text-decoration: none;
@@ -40,6 +34,11 @@
   color: black;
   background-color: lightgrey;
   transition: background-color .5s;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em;
 }
 
 body {
@@ -85,5 +84,11 @@ aside {
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-
+ .header {
+   flex-direction: column;
+   align-items: center;
+ }
+ .header a {
+   margin: 1em 0 1em 0;
+ }
 }
