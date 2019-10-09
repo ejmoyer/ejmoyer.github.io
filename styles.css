@@ -3,9 +3,13 @@
 *::before,
  *::after {
    box-sizing: border-box;
-   padding: 0;
    margin: 0;
+   padding: 0;
  }
+
+html {
+  font-family: monospace, sans-serif;
+}
 
 /*** BODY ***/
 .body {
@@ -15,42 +19,38 @@
   text-align: center;
 }
 
-.body h1 {
-  font-size: 2em;
-}
-
 .body p {
   padding: 1em;
 }
 
 .header {
-  margin: 1em;
+  border: 5px solid lightgrey;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border: 5px solid lightgrey;
-}
-
-.header a {
-  width: 10em;
-  padding: 1em;
-  margin: 2em 0 2em 0;
-  border: 3px solid lightgrey;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  background-color: lightgrey;
-  transition: background-color .5s;
-}
-
-h1 {
-  text-align: center;
   margin: 1em;
 }
 
+.header a {
+  background-color: lightgrey;
+  border: 3px solid lightgrey;
+  color: black;
+  margin: 2em 0 2em 0;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .5s;
+  width: 10em;
+
+}
+
+h1 {
+  margin: 1em;
+  text-align: center;
+}
+
 body {
-  font-family: "Ebrima", sans-serif;
   background-color: black;
   color: white;
 }
@@ -63,10 +63,10 @@ nav a:hover {
 /*** Portfolio List ***/
 
 .sidebar {
-  padding: 1em;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  padding: 1em;
 }
 
 .sidebar li {
@@ -79,8 +79,8 @@ nav a:hover {
 }
 
 .unordered li {
-  padding: 1em 0 1em 0;
   list-style-type: none;
+  padding: 1em 0 1em 0;
 }
 
 aside {
@@ -89,11 +89,11 @@ aside {
     padding: 1em;
 }
 
-/* Mobile Styles */
+/* Screen Styles */
 @media only screen and (max-width: 500px) {
  .header {
-   flex-direction: column;
    align-items: center;
+   flex-direction: column;
  }
  .header a {
    margin: 1em 0 1em 0;
