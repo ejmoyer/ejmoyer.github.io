@@ -24,30 +24,19 @@ html {
 }
 
 .header {
-  border: 5px solid lightgrey;
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: 1em;
+  width: 30em;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .header a {
-  background-color: black;
-  border: 3px solid lightgrey;
-  color: #40c943;
-  margin: 2em 0 2em 0;
-  padding: 1em;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background-color .5s;
-  width: 10em;
-
-}
-
-h1 {
-  margin: 1em;
-  text-align: center;
+padding: .5em;
+border: 3px solid black;
+background: lightgrey;
+color: black;
+margin: .5em 1em;
 }
 
 body {
@@ -102,6 +91,10 @@ h5 {
   margin: 0;
   padding: 0;
   text-align: left;
+}
+
+.uni-header h1 {
+  display: inline;
 }
 
 /* Screen Styles */
