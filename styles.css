@@ -51,14 +51,18 @@ h1 {
 }
 
 body {
-  background-color: black;
+  background-color: #1f6618;
   color: #40c943;
+  border: 3px solid lightgrey;
 }
 
 nav a:hover {
   background-color: darkgrey;
 }
 
+h5 {
+  padding: 1em;
+}
 
 /*** Portfolio List ***/
 
@@ -89,11 +93,6 @@ nav a:hover {
     width: 20em;
     margin: 0 auto;
     padding: 1em;
-}
-
-.uni-footer {
-  border: 3px solid lightgrey;
-  background: grey;
 }
 
 .uni-header {
