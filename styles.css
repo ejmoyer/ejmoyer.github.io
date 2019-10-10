@@ -32,9 +32,9 @@ html {
 }
 
 .header a {
-  background-color: lightgrey;
+  background-color: black;
   border: 3px solid lightgrey;
-  color: black;
+  color: #40c943;
   margin: 2em 0 2em 0;
   padding: 1em;
   text-align: center;
@@ -52,7 +52,7 @@ h1 {
 
 body {
   background-color: black;
-  color: white;
+  color: #40c943;
 }
 
 nav a:hover {
@@ -67,6 +67,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   padding: 1em;
+  margin: 0 auto;
 }
 
 .sidebar li {
@@ -74,7 +75,7 @@ nav a:hover {
 }
 
 .sidebar a {
-  color: white;
+  color: #40c943;
   text-decoration: none;
 }
 
@@ -83,10 +84,25 @@ nav a:hover {
   padding: 1em 0 1em 0;
 }
 
-aside {
-    border: 3px dotted lightgrey;
-    margin: 1em;
+.blog-posts {
+    border: 3px solid lightgrey;
+    width: 20em;
+    margin: 0 auto;
     padding: 1em;
+}
+
+.uni-footer {
+  border: 3px solid lightgrey;
+  background: grey;
+}
+
+.uni-header {
+  border: 3px solid lightgrey;
+  background: #274be8;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 /* Screen Styles */
