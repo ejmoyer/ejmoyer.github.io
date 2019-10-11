@@ -80,9 +80,22 @@ h5 {
 
 .blog-posts {
   border: 3px solid lightgrey;
-  width: 20em;
-  margin: 0 auto;
-  padding: 1em;
+  margin: 1em 1em;
+}
+
+.blog-posts h3 {
+  background: #274be8;
+  color: white;
+  border-bottom: 3px solid lightgrey;
+}
+
+.postdesc {
+  font-size: 1em;
+}
+
+.blogpic {
+  float: left;
+  margin: 2em;
 }
 
 .uni-header {
@@ -118,5 +131,10 @@ h5 {
 
   .header a {
     text-align: center;
+  }
+
+  .blogpic {
+    float: none;
+    margin: 0 auto;
   }
 }
