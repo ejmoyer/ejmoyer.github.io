@@ -74,6 +74,10 @@ nav a:hover {
   padding: 1em 0 1em 0;
 }
 
+.unordered a img {
+  max-width: 15em;
+}
+
 .blog-posts {
   border: 3px solid lightgrey;
   margin: 1em 1em;
