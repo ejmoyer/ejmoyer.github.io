@@ -1,11 +1,11 @@
 /*** GENERAL ***/
 *,
 *::before,
- *::after {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
- }
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font-family: monospace, sans-serif;
@@ -23,8 +23,8 @@ p {
   text-align: center;
 }
 
-.body p {
-  margin: 1.4em;
+.body h1, h2, h3, h4, h5 {
+  font-size: 1.5em;
 }
 
 .header {
@@ -34,11 +34,11 @@ p {
 }
 
 .header a {
-padding: .5em;
-border: 3px solid black;
-background: lightgrey;
-color: black;
-text-decoration: none;
+  padding: .5em;
+  border: 3px solid black;
+  background: lightgrey;
+  color: black;
+  text-decoration: none;
 }
 
 body {
@@ -56,7 +56,6 @@ h5 {
 }
 
 /*** Portfolio List ***/
-
 .sidebar {
   align-items: flex-start;
   display: flex;
@@ -80,10 +79,10 @@ h5 {
 }
 
 .blog-posts {
-    border: 3px solid lightgrey;
-    width: 20em;
-    margin: 0 auto;
-    padding: 1em;
+  border: 3px solid lightgrey;
+  width: 20em;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .uni-header {
@@ -95,25 +94,28 @@ h5 {
 }
 
 .uni-header h1 {
-  display: block;
+  font-size: 1.5em;
 }
 
 /* Screen Styles */
-@media only screen and (max-width: 600px) {
- .header {
-   position: static;
-   margin: 1em 1em;
- }
- .header a {
-   margin: 1em 0 1em 0;
- }
+@media only screen and (max-width: 720px) {
+  .header {
+    position: static;
+    margin: 1em 1em;
+  }
+
+  .header a {
+    margin: 1em 0 1em 0;
+  }
 }
+
 @media only screen and (max-width: 400px) {
   .header {
     position: static;
     display: flex;
     flex-direction: column;
   }
+
   .header a {
     text-align: center;
   }
