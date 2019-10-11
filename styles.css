@@ -81,6 +81,7 @@ h5 {
 .blog-posts {
   border: 3px solid lightgrey;
   margin: 1em 1em;
+  max-width: 30em;
 }
 
 .blog-posts h3 {
