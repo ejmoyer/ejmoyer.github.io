@@ -12,24 +12,25 @@ html {
   line-height: 1.4;
 }
 
+p {
+  margin: 1.4em;
+}
+
 /*** BODY ***/
 .body {
-  border: 5px solid lightgrey;
-  margin: 1em;
+  margin: 1.4em;
   padding: 1em;
   text-align: center;
 }
 
 .body p {
-  padding: 1em;
+  margin: 1.4em;
 }
 
 .header {
-  display: inline-flex;
-  flex-direction: row;
-  width: 30em;
-  align-items: center;
-  justify-content: flex-end;
+  position: absolute;
+  top: 2em;
+  right: 1em;
 }
 
 .header a {
@@ -37,7 +38,7 @@ padding: .5em;
 border: 3px solid black;
 background: lightgrey;
 color: black;
-margin: .5em 1em;
+text-decoration: none;
 }
 
 body {
@@ -90,21 +91,30 @@ h5 {
   background: #274be8;
   color: white;
   margin: 0;
-  padding: 0;
-  text-align: left;
+  padding: 1em 0em;
 }
 
 .uni-header h1 {
-  display: inline;
+  display: block;
 }
 
 /* Screen Styles */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
  .header {
-   align-items: center;
-   flex-direction: column;
+   position: static;
+   margin: 1em 1em;
  }
  .header a {
    margin: 1em 0 1em 0;
  }
+}
+@media only screen and (max-width: 400px) {
+  .header {
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+  .header a {
+    text-align: center;
+  }
 }
