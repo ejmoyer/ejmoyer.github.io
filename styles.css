@@ -29,30 +29,26 @@ p {
 
 .header {
   position: absolute;
-  top: 2em;
   right: 1em;
+  top: 2em;
 }
 
 .header a {
-  padding: .5em;
-  border: 3px solid black;
   background: lightgrey;
+  border: 3px solid black;
   color: black;
+  padding: .5em;
   text-decoration: none;
 }
 
 body {
   background-color: #1f6618;
-  color: #40c943;
   border: 3px solid lightgrey;
+  color: #40c943;
 }
 
 nav a:hover {
   background-color: darkgrey;
-}
-
-h5 {
-  padding: 1em;
 }
 
 /*** Portfolio List ***/
@@ -60,8 +56,8 @@ h5 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  padding: 1em;
   margin: 0 auto;
+  padding: 1em;
 }
 
 .sidebar li {
@@ -86,25 +82,26 @@ h5 {
 
 .blog-posts h3 {
   background: #274be8;
-  color: white;
   border-bottom: 3px solid lightgrey;
+  color: white;
 }
 
-.postdesc {
+.post-desc {
   font-size: 1em;
+  padding: 1em;
 }
 
-.blogpic {
+.blog-pic {
   float: left;
   margin: 2em;
 }
 
 .uni-header {
-  border: 3px solid lightgrey;
   background: #274be8;
+  border: 3px solid lightgrey;
   color: white;
   margin: 0;
-  padding: 1em 0em;
+  padding: 1em 0;
 }
 
 .uni-header h1 {
@@ -114,8 +111,8 @@ h5 {
 /* Screen Styles */
 @media only screen and (max-width: 720px) {
   .header {
-    position: static;
     margin: 1em 1em;
+    position: static;
   }
 
   .header a {
@@ -125,16 +122,16 @@ h5 {
 
 @media only screen and (max-width: 400px) {
   .header {
-    position: static;
     display: flex;
     flex-direction: column;
+    position: static;
   }
 
   .header a {
     text-align: center;
   }
 
-  .blogpic {
+  .blog-pic {
     float: none;
     margin: 0 auto;
   }
