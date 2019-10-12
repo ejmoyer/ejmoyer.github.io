@@ -29,13 +29,13 @@ h5 {
 .body {
   margin: 1.4vw;
   padding: 1vh 1vw;
-  text-align: center;
+  text-align: justify;
 }
 
 .header {
   position: absolute;
   right: 1vw;
-  top: 3vh;
+  top: 2.5vh;
 }
 
 .header a {
@@ -43,6 +43,7 @@ h5 {
   border: 3px solid black;
   color: black;
   padding: .5vh .5vw;
+  font-size: 2vw;
   text-decoration: none;
 }
 
@@ -114,7 +115,11 @@ nav a:hover {
 }
 
 /* Screen Styles */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 750px) {
+  main {
+    line-height: 1.5;
+  }
+
   .header {
     margin: 1vh 1vw;
     position: static;
@@ -126,6 +131,10 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 400px) {
+  main {
+    line-height: 1.2;
+  }
+
   .header {
     display: flex;
     flex-direction: column;
