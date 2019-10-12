@@ -75,13 +75,21 @@ nav a:hover {
   text-decoration: none;
 }
 
-.unordered li {
-  list-style-type: none;
-  padding: 1vw 0 1vw 0;
+.unordered {
+  display: flex;
 }
 
-.unordered a img {
-  max-width: 15vw;
+.unordered li {
+  font-size: 2vw;
+  list-style-type: none;
+  padding: 1vw 0 1vw 0;
+  margin: 1vh 1vw;
+}
+
+.port-image {
+  max-width: 30vw;
+  padding: 1vh 0;
+  margin: 1vh 0;
 }
 
 .blog-posts {
@@ -116,7 +124,7 @@ nav a:hover {
 
 /* Screen Styles */
 @media only screen and (max-width: 750px) {
-  main {
+  html {
     line-height: 1.5;
   }
 
@@ -131,7 +139,7 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 400px) {
-  main {
+  html {
     line-height: 1.2;
   }
 
