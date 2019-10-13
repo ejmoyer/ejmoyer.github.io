@@ -42,8 +42,8 @@ h5 {
   background: lightgrey;
   border: 3px solid black;
   color: black;
-  padding: .5vh .5vw;
   font-size: 1rem;
+  padding: .5vh .5vw;
   text-decoration: none;
 }
 
@@ -82,14 +82,14 @@ nav a:hover {
 .unordered li {
   font-size: 1rem;
   list-style-type: none;
-  padding: 1vw 0 1vw 0;
   margin: 1vh 1vw;
+  padding: 1vw 0 1vw 0;
 }
 
 .port-image {
+  margin: 1vh 0;
   max-width: 30vw;
   padding: 1vh 0;
-  margin: 1vh 0;
 }
 
 .blog-posts {
@@ -131,6 +131,7 @@ nav a:hover {
   .blog-posts h1 {
     overflow-wrap: break-word;
   }
+
   .header {
     margin: 1vh 1vw;
     position: static;
@@ -151,8 +152,8 @@ nav a:hover {
   }
 
   p {
-    margin: 1.5rem;
     font-size: 1rem;
+    margin: 1.5rem;
   }
 
   h1,
