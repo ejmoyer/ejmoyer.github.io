@@ -43,7 +43,7 @@ h5 {
   border: 3px solid black;
   color: black;
   font-size: 1rem;
-  padding: .5vh .5vw;
+  padding: 0.5vh 0.5vw;
   text-decoration: none;
 }
 
@@ -144,7 +144,8 @@ nav a:hover {
     line-height: 1.5;
   }
 
-  a, li {
+  a,
+  li {
     font-size: 1rem;
   }
 
@@ -160,6 +161,7 @@ nav a:hover {
   h5 {
     font-size: 1.5rem;
     overflow-wrap: break-word;
+
   }
 
   .blog-posts {
