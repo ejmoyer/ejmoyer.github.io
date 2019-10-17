@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 .sidebar a {
-  color: #40c943;
+  color: #00ff05;
   text-decoration: none;
 }
 
@@ -89,10 +89,24 @@ nav a:hover {
   padding: 1vh 0;
 }
 
+.blog-figure {
+  float: left;
+  width: 44vw;
+}
+
 .blog-posts {
   border: 3px solid lightgrey;
   margin: 1vh 1vw;
   max-width: 45vw;
+}
+
+.blog-figcaption {
+  font-size: 0.75em;
+  margin: -1vw 2vw 0 2vw;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  padding: 1em;
 }
 
 .blog-posts h2 {
@@ -107,8 +121,8 @@ nav a:hover {
 }
 
 .blog-pic {
-  float: left;
-  margin: 2vw;
+  margin: 2vw 2vw 0 2vw;
+  width: 40vw;
 }
 
 .uni-header {
@@ -136,6 +150,11 @@ nav a:hover {
 
   .header a {
     margin: 1vw 0 1vw 0;
+  }
+
+  .blog-figure {
+    float: unset;
+    margin: 0 auto;
   }
 }
 
