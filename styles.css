@@ -95,7 +95,7 @@ nav a:hover {
   max-width: 45vw;
 }
 
-.blog-posts h1 {
+.blog-posts h2 {
   background: #274be8;
   border-bottom: 3px solid lightgrey;
   color: white;
@@ -125,7 +125,7 @@ nav a:hover {
     line-height: 1.5;
   }
 
-  .blog-posts h1 {
+  .blog-posts h2 {
     overflow-wrap: break-word;
   }
 
