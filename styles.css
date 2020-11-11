@@ -1,4 +1,4 @@
-/*** GENERAL ***/
+/*** GENERAL **
 *,
 *::before,
 *::after {
@@ -6,158 +6,20 @@
   margin: 0;
   padding: 0;
 }
-
-html {
-  font-family: monospace, sans-serif;
-  line-height: 1.4;
-}
-
-p {
-  font-size: 1rem;
-  margin: 1.4rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-size: 1.5rem;
-}
-
 /*** BODY ***/
-.body {
-  margin: 1.4vw;
-  padding: 1vh 1vw;
-  text-align: left;
-}
-
-.header {
-  position: absolute;
-  right: 1vw;
-  top: 2.5vh;
-}
-
-.header a {
-  background: lightgrey;
-  border: 3px solid black;
-  color: black;
-  font-size: 1rem;
-  padding: 0.5vh 0.5vw;
-  text-decoration: none;
-}
-
-body {
-  background-color: #1f6618;
-  border: 3px solid lightgrey;
-  color: #00ff05;
-}
-
-nav a:hover {
-  background-color: darkgrey;
-}
 
 /*** Portfolio List ***/
-.sidebar {
-  margin: 1vh 1vw;
-  padding: 1vh 1vw;
-}
-
-.sidebar li {
-  list-style-type: none;
-}
-
-.sidebar a {
-  color: #00ff05;
-  text-decoration: none;
-}
-
-.unordered {
-  display: flex;
-}
-
-.unordered li {
-  font-size: 1rem;
-  list-style-type: none;
-  margin: 1vh 1vw;
-  padding: 1vw 0 1vw 0;
-}
-
 .port-image {
   margin: 1vh 0;
   max-width: 30vw;
   padding: 1vh 0;
 }
-
-.blog-figure {
-  float: left;
-  width: 44vw;
-}
-
-.blog-posts {
-  border: 3px solid lightgrey;
-  margin: 1vh 1vw;
-  max-width: 45vw;
-}
-
-.blog-figcaption {
-  font-size: 0.75em;
-  margin: -1vw 2vw 0 2vw;
-  border-left: 2px solid;
-  border-right: 2px solid;
-  border-bottom: 2px solid;
-  padding: 1em;
-}
-
-.blog-posts h2 {
-  background: #274be8;
-  border-bottom: 3px solid lightgrey;
-  color: white;
-}
-
-.post-desc {
-  font-size: 1rem;
-  padding: 1vw;
-}
-
-.blog-pic {
-  margin: 2vw 2vw 0 2vw;
-  width: 40vw;
-}
-
-.uni-header {
-  background: #274be8;
-  border: 3px solid lightgrey;
-  color: white;
-  margin: 0;
-  padding: 1vw 0;
-}
-
 /* Screen Styles */
 @media only screen and (max-width: 750px) {
   html {
     line-height: 1.5;
   }
-
-  .blog-posts h2 {
-    overflow-wrap: break-word;
-  }
-
-  .header {
-    margin: 1vh 1vw;
-    position: static;
-  }
-
-  .header a {
-    margin: 1vw 0 1vw 0;
-  }
-
-  .blog-figure {
-    float: unset;
-    margin: 0 auto;
-  }
 }
-
 @media only screen and (max-width: 400px) {
   html {
     line-height: 1.5;
@@ -180,25 +42,5 @@ nav a:hover {
   h5 {
     font-size: 1.5rem;
     overflow-wrap: break-word;
-
-  }
-
-  .blog-posts {
-    max-width: none;
-  }
-
-  .header {
-    display: flex;
-    flex-direction: column;
-    position: static;
-  }
-
-  .header a {
-    text-align: center;
-  }
-
-  .blog-pic {
-    float: none;
-    margin: 0 auto;
   }
 }
