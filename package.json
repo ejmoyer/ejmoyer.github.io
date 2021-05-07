@@ -15,6 +15,6 @@
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-csslint": "^1.0.1",
-    "gulp-htmllint": "0.0.16"
+    "gulp-htmllint": "0.0.19"
   }
 }

@@ -106,6 +106,10 @@ a {
   flex-direction: column;
 }
 
+.icon-list li {
+  list-style-type: none;
+}
+
 .icon-list li a img {
   padding-top: 1rem;
   padding-bottom: 1rem;
