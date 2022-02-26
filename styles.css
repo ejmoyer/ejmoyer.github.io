@@ -44,6 +44,11 @@ a {
   width: 90%;
 }
 
+.small-container h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
 .preface {
   padding: 0.5rem 4rem 4rem 4rem;
   text-align: center;
@@ -78,9 +83,16 @@ a {
   padding: 2rem 2rem 2rem 2rem;
 }
 
+.knowledge-col p {
+  font-style: oblique;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+
 .knowledge-col li {
   list-style: none;
   color: #000000;
+  text-align: center;
 }
 
 .knowledge-col img {
@@ -98,7 +110,7 @@ a {
   padding: 0.5rem;
 }
 
-.previous-projects h1 {
+.previous-projects h1, h2 {
   padding: 4rem;
 }
 
