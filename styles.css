@@ -115,6 +115,12 @@ a {
   padding: 4rem;
 }
 
+.project-list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .footer {
   padding: 4rem 0 0 0;
   text-align: center;
@@ -137,6 +143,7 @@ a {
 }
 
 #infoBox {
+  width: 100%;
   align-items: center;
   background-color: #32292f;
   display: flex;
@@ -144,9 +151,16 @@ a {
   justify-content: center;
 }
 
-#infoBox a {
+#infoBox h1, a {
   color: #F8F8FF;
   padding: 1rem;
+}
+
+#infoBox p {
+  color: #F8F8FF;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 8rem 0 8rem;
 }
 /* For the Navigation Buttons */
 
