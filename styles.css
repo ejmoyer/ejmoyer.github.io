@@ -22,17 +22,25 @@ a {
   justify-content: center;
 }
 
+.container header h1 {
+  color: #fff4f4;
+}
+
+.container header p {
+  color: #F8F8FF;
+}
+
 .container h1 {
-  color: #d1e3dd;
+  color: #000000;
 }
 
 .container p {
-  color: #d1e3dd;
+  color: #000000;
 }
 
 .small-container {
   margin: 0 auto;
-  background-color: #935aff;
+  background-color: #F8F8FF;
   width: 90%;
 }
 
@@ -72,7 +80,7 @@ a {
 
 .knowledge-col li {
   list-style: none;
-  color: #d1e3dd;
+  color: #000000;
 }
 
 .knowledge-col img {
@@ -83,7 +91,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #935aff;
+  background-color: #F8F8FF;
 }
 
 .previous-projects section img {
@@ -98,7 +106,7 @@ a {
   padding: 4rem 0 0 0;
   text-align: center;
   width: 100%;
-  background-color: #935aff;
+  background-color: #F8F8FF;
 }
 
 .icon-list {
