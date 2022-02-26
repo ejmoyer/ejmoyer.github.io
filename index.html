@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap"
       rel="stylesheet"
     />
+    <script src="addInfo.js" defer></script>
     <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -98,31 +99,34 @@
         <h2>My previous projects..</h1>
 
         <section class="project-list">
-          <a href="https://github.com/ejmoyer/flask-todo">
+          <!--  <a href="https://github.com/ejmoyer/flask-todo"> -->
+          <button onclick="projOneInfo()">
             <img src="images/flask-todo.png" alt="" height="200" width="200" />
-          </a>
-
-          <a href="https://github.com/ScottJohnson02/tsct-portal">
+          </button>
+          <!--<a href="https://github.com/ScottJohnson02/tsct-portal">-->
+          <button onclick="projTwoInfo()">
             <img
               src="images/school-portal.png"
               alt=""
               height="200"
               width="200"
             />
-          </a>
-
-          <a href="https://github.com/ejmoyer/retirement-home-CSET2020">
+          </button>
+          <!-- <a href="https://github.com/ejmoyer/retirement-home-CSET2020"> -->
+          <button onclick="projThreeInfo()">
             <img src="images/retirement.png" alt="" height="200" width="200" />
-          </a>
+          </button>
 
-          <a href="https://github.com/BillSpyro/MediaCenter">
+          <!--<a href="https://github.com/BillSpyro/MediaCenter"> -->
+          <button onclick="projFourInfo()">
             <img
               src="images/social-media.png"
               alt=""
               height="200"
               width="200"
             />
-          </a>
+          </button>
+          <section id="infoBox"></section>
         </section>
       </article>
     </main>

@@ -106,8 +106,9 @@ a {
   background-color: #F8F8FF;
 }
 
-.previous-projects section img {
-  padding: 0.5rem;
+.previous-projects section button {
+  padding: .5rem;
+  
 }
 
 .previous-projects h1, h2 {
@@ -133,6 +134,19 @@ a {
 .icon-list li a img {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+#infoBox {
+  align-items: center;
+  background-color: #32292f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#infoBox a {
+  color: #F8F8FF;
+  padding: 1rem;
 }
 /* For the Navigation Buttons */
 
