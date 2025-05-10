@@ -1,2 +1,16 @@
+# IDE files
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/
+
+# Dependency directories
 node_modules/
-archived-pages/
+
+# System files
+.DS_Store
+Thumbs.db
