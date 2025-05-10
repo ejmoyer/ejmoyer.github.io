@@ -1,20 +1,21 @@
 {
-  "name": "build-tool-template",
+  "name": "developer-portfolio",
+  "private": "true",
   "version": "1.0.0",
-  "description": "A directory to practice build tools",
+  "description": "My portfolio to show to prospective employers.",
   "main": "index.html",
   "scripts": {
-    "start": "gulp",
-    "html": "gulp html",
-    "css": "gulp css",
-    "lint": "gulp lint"
+    "start": "gulp serve",
+    "tailwind": "npx @tailwindcss/cli -i ./styles.css -o ./output.css --watch"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Eric Moyer",
+  "license": "UNLICENSED",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
-    "gulp": "^4.0.2",
-    "gulp-csslint": "^1.0.1",
-    "gulp-htmllint": "0.0.19"
+    "browser-sync": "^3.0.4",
+    "gulp": "^5.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.6",
+    "tailwindcss": "^4.1.6"
   }
 }

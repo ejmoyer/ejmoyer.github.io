@@ -1,175 +1,162 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="output.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" charset="utf-8" />
     <title>Eric Moyer Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap"
-      rel="stylesheet"
-    />
-    <script src="addInfo.js" defer></script>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
-
-  <body class="container">
-    <header>
-      <h1 class="preface-heading">Hi, I'm Eric.</h1>
-        <p class="preface">
-          All my life, computers have fascinated me. Now I work with them on a
-          daily basis.
-        </p>
-
+  <body class="bg-jet-black">
+    <header class="pt-36 pb-8">
+      <h1 class="text-center font-mono text-4xl">Hi, I'm Eric.</h1>
+      <p class="text-center p-4">All my life, computers have fascinated me. Now I work with them on a daily basis.</p>
     </header>
 
-    <main>
-      <article class="small-container">
+    <main class="flex flex-col items-center">
+        <div class="py-16 bg-royal-eggplant w-full">
+          <h1 class="text-center text-4xl font-mono">KNOWLEDGE</h1>
+          <p class="text-center pt-4 italic">What I know, what I'd like to know.</p>
+        </div>
 
-        <h1>Knowledge</h1>
-        
-        <article class="knowledge-row">
-          <section class="knowledge-col">
-            <img src="images/languages.png" alt="" height="150" width="150" />
-            <p>Languages</p>
-            <ul>
+        <article class="grid grid-cols-3 justify-items-center relative bottom-8 bg-jet-black pb-16">
+          <section class="flex flex-col items-center py-4 border-l-4 border-y-4 border-off-eggplant w-[20vw]">
+            <img src="images/languages.png" alt="A computer with a open tag symbol" class="rounded-xl knowledge-img" />
+            <h2 class="text-center text-xl font-mono font-bold py-4">LANGUAGES</h2>
+
+            <p class="pb-4 italic">The dialects of code I speak.</p> 
+
+            <ul class="flex flex-col items-center">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>PHP</li>
+              <li>C#</li>
               <li>Python</li>
               <li>Java</li>
-              <li>Flutter</li>
+              <li>C/C++</li>
               <li>SQL</li>
-              <li>PHP</li>
             </ul>
           </section>
 
-          <section class="knowledge-col">
-            <img 
-              src="images/tools.png" 
-              alt="" 
-              height="150" 
-              width="150"
-            />
+          <section class="flex flex-col items-center py-4 border-4 border-off-eggplant w-[20vw]">
+            <img src="images/tools.png" alt="Crossing screwdriver and wrench" class="rounded-xl knowledge-img" />
+            <h2 class="text-center text-xl font-mono font-bold py-4">TOOLS</h2>
 
-            <p>Tools</p>
+            <p class="pb-4 italic">A good tool is just as important as a good plan.</p>
 
-            <ul>
-              <li>Atom</li>
-              <li>Android Studio</li>
-              <li>PHPMyAdmin</li>
-              <li>Postgres</li>
+            <ul class="flex flex-col items-center">
+              <li>Angular</li>
+              <li>Tailwind CSS</li>
+              <li>SSMS</li>
+              <li>PostgreSQL</li>
               <li>Visual Studio</li>
               <li>Git</li>
+              <li>Hyper-V</li>
+              <li>Active Directory</li>
             </ul>
           </section>
 
-          <section class="knowledge-col">
-            <img
-              src="images/want-to-learn.png"
-              alt=""
-              height="150"
-              width="150"
-            />
+          <section class="flex flex-col items-center py-4 border-y-4 border-r-4 border-off-eggplant w-[20vw]">
+            <img src="images/want-to-learn.png" alt="A book" class="rounded-xl knowledge-img" />
+            <h2 class="text-center text-xl font-mono font-bold py-4">WHAT'S NEXT?</h2>
 
-            <p>Todo!</p>
+            <p class="pb-4 italic">An endless journey of learning awaits.</p>
 
-            <ul>
-              <li>React.js</li>
-              <li>.NET</li>
-              <li>Typescript</li>
+            <ul class="flex flex-col items-center">
+              <li>React</li>
+              <li>Vue</li>
               <li>Laravel</li>
             </ul>
           </section>
-        </article>
       </article>
 
-      <article>
+      <div class="py-16 bg-royal-eggplant w-full">
+        <h1 class="text-center text-4xl font-mono">MY PROJECTS</h1>
         
-      </article>
+        <p class="text-center pt-4 italic">Just a few examples of my work.</p>
+      </div>
+      
+      <article class="grid grid-rows-2 grid-cols-2 w-3/4 gap-4 relative bottom-8">
+        <div class="border-4 border-off-eggplant bg-jet-black">
+          <div class="flex flex-row items-center justify-around py-4">
+            <h3 class="text-2xl">Thaddeus Stevens School Portal Mock-up</h3>
+            <img src="images/school-portal.png" alt="" class="projects-img" />
+          </div>
 
-      <article class="previous-projects">
+          <p class="text-center">This project was made with Python's Flask Web Framework with a MySQL database. It involved working with a
+            small 4 person team to partially remake our school's portal. Main features include 
+            users, assignments, grading, courses, and course sessions.</p>
 
-        <h1>Current Projects</h1>
+            <a href="https://github.com/ScottJohnson02/tsct-portal">
+              <div class="p-2 my-4 mx-auto bg-off-eggplant w-1/4 flex items-center">
+                <img src="images/link.png" class="link-icon" />
+                <p class="text-center pl-1">Github link to this project</p>
+              </div>
+            </a>
+        </div>
 
-        <p>Coming soon! To give you a hint, it's made with React.js!</p>
+        <div class="border-4 border-off-eggplant bg-jet-black">
+          <div class="flex flex-row items-center justify-around py-4">
+            <h3 class="text-2xl">Retirement Home Web Application</h3>
+            <img src="images/retirement.png" alt="" class="projects-img" />
+          </div>
 
-        <h2>My previous projects..</h1>
+          <p class="text-center">A two man project that was made in PHP with a MySQL database. It is a fully functional web application that would be
+            for a theoretical retirement home. It's features include mutliple types of users, doctor's appointments,
+            employee rosters, patient payments, and more.</p>
 
-        <section class="project-list">
+            <a href="https://github.com/ejmoyer/retirement-home-CSET2020">
+              <div class="p-2 my-4 mx-auto bg-off-eggplant w-1/4 flex items-center">
+                <img src="images/link.png" class="link-icon" />
+                <p class="text-center pl-1">Github link to this project</p>
+              </div>
+            </a>
+        </div>
 
-          <button onclick="projOneInfo()">
-            <img 
-              src="images/flask-todo.png"
-              alt="" 
-              height="200" 
-              width="200"
-            />
-          </button>
+        <div class="border-4 border-off-eggplant bg-jet-black">
+          <div class="flex flex-row items-center justify-around py-4">
+            <h3 class="text-2xl">Social Media Web Application</h3>
+            <img src="images/social-media.png" alt="" class="projects-img" />
+          </div>
 
-          <button onclick="projTwoInfo()">
-            <img
-              src="images/school-portal.png"
-              alt=""
-              height="200"
-              width="200"
-            />
-          </button>
-          <button onclick="projThreeInfo()">
-            <img 
-              src="images/retirement.png" 
-              alt="" 
-              height="200" 
-              width="200" 
-            />
-          </button>
+          <p class="text-center">This project is created in PHP with MySQL database support. A three
+            person project that was based off of Facebook. Features include users, posts,
+            friend requests, liking posts, and even videos.</p>
 
-          <button onclick="projFourInfo()">
-            <img
-              src="images/social-media.png"
-              alt=""
-              height="200"
-              width="200"
-            />
-          </button>
-
-        </section>
-
-        <section id="infoBox"></section>
-
+            <a href="https://github.com/BillSpyro/MediaCenter">
+              <div class="p-2 my-4 mx-auto bg-off-eggplant w-1/4 flex items-center">
+                <img src="images/link.png" class="link-icon" />
+                <p class="text-center pl-1">Github link to this project</p>
+              </div>
+            </a>
+        </div>
+        
+        <div class="border-4 border-off-eggplant bg-jet-black">
+        </div>
       </article>
     </main>
 
-    <footer class="footer">
-      <p>Interested in my work?</p>
+    <footer class="pt-8">
+      <p class="text-center text-4xl font-mono">LINKS</p>
 
-      <p>Here's some links to reach me:</p>
+      <p class="text-center pt-4 italic">Where you can find me and my projects.</p>
       
-      <ul class="icon-list">
-        <li>
+      <div class="py-8 flex flex-row justify-center gap-4">
+        <div class="rounded-[50%] border-4 border-off-eggplant">
           <a href="https://github.com/ejmoyer">
-            <img
-              src="images/github.png"
-              alt="Github Logo"
-              width="75"
-              height="75"
-            />
+            <img src="images/github.png" alt="Github Logo" class="link-img rounded-[50%]" />
           </a>
-        </li>
+        </div>
 
-        <li>
+        <div class="rounded-[50%] border-4 border-off-eggplant">
           <a href="https://www.linkedin.com/in/eric-moyer-0705b21a6/">
-            <img
-              src="images/linkedin.png"
-              alt="LinkedIn Logo"
-              width="100"
-              height="100"
-            />
+            <img src="images/linkedin.png" alt="LinkedIn Logo" class="link-img rounded-[50%]" />
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
+
+      <p class="text-center pb-4">Eric Moyer © 2025</p>
     </footer>
   </body>
 </html>
