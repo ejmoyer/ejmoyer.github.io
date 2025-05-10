@@ -12,7 +12,12 @@
   color: var(--color-light-silver);
 }
 
-.card-img {
+.knowledge-img {
+  height: 150px;
+  width: 150px;
+}
+
+.projects-img {
   height: 120px;
   width: 200px;
 }
