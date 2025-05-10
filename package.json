@@ -5,12 +5,17 @@
   "description": "My portfolio to show to prospective employers.",
   "main": "index.html",
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "tailwind": "npx @tailwindcss/cli -i ./styles.css -o ./output.css --watch"
   },
   "author": "Eric Moyer",
   "license": "UNLICENSED",
   "devDependencies": {
     "browser-sync": "^3.0.4",
     "gulp": "^5.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.6",
+    "tailwindcss": "^4.1.6"
   }
 }
