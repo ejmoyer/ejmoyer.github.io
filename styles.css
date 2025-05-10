@@ -5,8 +5,25 @@
   --color-off-eggplant: #5e4356;
   --color-jet-black: #1E1C1C;
   --color-light-silver: #E9EBEB;
+  --color-saffron-gold: #ECC664;
 }
 
 * {
-  color: #E9EBEB;
+  color: var(--color-light-silver);
+}
+
+.card-img {
+  height: 120px;
+  width: 200px;
+}
+
+.link-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.link-img {
+  background-color: var(--color-light-silver);
+  width: 32px;
+  height: 32px;
 }

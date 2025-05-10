@@ -10,6 +10,8 @@
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-bold: 700;
@@ -19,6 +21,7 @@
     --color-royal-eggplant: #4E3145;
     --color-off-eggplant: #5e4356;
     --color-jet-black: #1E1C1C;
+    --color-light-silver: #E9EBEB;
   }
 }
 @layer base {
@@ -173,11 +176,23 @@
   .bottom-8 {
     bottom: calc(var(--spacing) * 8);
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
+  }
+  .w-1\/4 {
+    width: calc(1/4 * 100%);
+  }
+  .w-3\/4 {
+    width: calc(3/4 * 100%);
   }
   .w-\[20vw\] {
     width: 20vw;
@@ -185,17 +200,38 @@
   .w-full {
     width: 100%;
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .justify-center {
+    justify-content: center;
+  }
   .justify-items-center {
     justify-items: center;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .rounded-\[50\%\] {
+    border-radius: 50%;
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
@@ -222,8 +258,14 @@
   .bg-jet-black {
     background-color: var(--color-jet-black);
   }
+  .bg-off-eggplant {
+    background-color: var(--color-off-eggplant);
+  }
   .bg-royal-eggplant {
     background-color: var(--color-royal-eggplant);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -231,8 +273,17 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
   }
   .pt-36 {
     padding-top: calc(var(--spacing) * 36);
@@ -243,11 +294,21 @@
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
   }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
+  }
+  .pl-1 {
+    padding-left: calc(var(--spacing) * 1);
+  }
   .text-center {
     text-align: center;
   }
   .font-mono {
     font-family: var(--font-mono);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-4xl {
     font-size: var(--text-4xl);
@@ -266,7 +327,20 @@
   }
 }
 * {
-  color: #E9EBEB;
+  color: var(--color-light-silver);
+}
+.card-img {
+  height: 120px;
+  width: 200px;
+}
+.link-icon {
+  width: 24px;
+  height: 24px;
+}
+.link-img {
+  background-color: var(--color-light-silver);
+  width: 32px;
+  height: 32px;
 }
 @property --tw-border-style {
   syntax: "*";
