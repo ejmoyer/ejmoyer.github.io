@@ -1,41 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-    />
-    <title>Eric Moyer Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap"
-      rel="stylesheet"
-    />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script src="addInfo.js" defer></script>
     <link href="output.css" rel="stylesheet" type="text/css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" charset="utf-8" />
+    <title>Eric Moyer Portfolio</title>
   </head>
-
-  <body class="container">
-    <header>
-      <h1 class="preface-heading">Hi, I'm Eric.</h1>
-        <p class="preface">
-          All my life, computers have fascinated me. Now I work with them on a
-          daily basis.
-        </p>
-
+  <body class="bg-jet-black">
+    <header class="pt-36 pb-8">
+      <h1 class="text-center font-mono text-4xl">Hi, I'm Eric.</h1>
+      <p class="text-center p-4">All my life, computers have fascinated me. Now I work with them on a daily basis.</p>
     </header>
 
-    <main>
-      <article class="small-container">
-
-        <h1>Knowledge</h1>
+    <main class="flex flex-col items-center">
+      <!-- <article class="bg-royal-eggplant"> -->
+        <h1 class="text-center py-16 text-4xl font-mono bg-royal-eggplant w-full">KNOWLEDGE</h1>
         
-        <article class="knowledge-row">
-          <section class="knowledge-col">
-            <img src="images/languages.png" alt="" height="150" width="150" />
-            <p>Languages</p>
+        <article class="grid grid-cols-3 justify-items-center relative bottom-8 bg-jet-black">
+          <section class="flex flex-col items-center py-4 border-l-4 border-y-4 border-off-eggplant w-[20vw]">
+            <img src="images/languages.png" alt="" height="150" width="150" class="rounded-xl" />
+            <h2 class="text-center text-xl font-mono font-bold py-4">LANGUAGES</h2>
+
+            <p class="pb-4 italic">The dialects of code I speak.</p> 
+
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -48,15 +35,11 @@
             </ul>
           </section>
 
-          <section class="knowledge-col">
-            <img 
-              src="images/tools.png" 
-              alt="" 
-              height="150" 
-              width="150"
-            />
+          <section class="flex flex-col items-center py-4 border-4 border-off-eggplant w-[20vw]">
+            <img src="images/tools.png" alt="" height="150" width="150" class="rounded-xl" />
+            <h2 class="text-center text-xl font-mono font-bold py-4">TOOLS</h2>
 
-            <p>Tools</p>
+            <p class="pb-4 italic">A good tool is just as important as a good plan.</p>
 
             <ul>
               <li>Atom</li>
@@ -68,15 +51,11 @@
             </ul>
           </section>
 
-          <section class="knowledge-col">
-            <img
-              src="images/want-to-learn.png"
-              alt=""
-              height="150"
-              width="150"
-            />
+          <section class="flex flex-col items-center py-4 border-y-4 border-r-4 border-off-eggplant w-[20vw]">
+            <img src="images/want-to-learn.png" alt="" height="150" width="150" class="rounded-xl" />
+            <h2 class="text-center text-xl font-mono font-bold py-4">WHAT'S NEXT?</h2>
 
-            <p>Todo!</p>
+            <p class="pb-4 italic">An endless journey of learning awaits.</p>
 
             <ul>
               <li>React.js</li>
@@ -85,14 +64,13 @@
               <li>Laravel</li>
             </ul>
           </section>
-        </article>
       </article>
 
       <article>
         
       </article>
 
-      <article class="previous-projects">
+      <article>
 
         <h1>Current Projects</h1>
 
@@ -100,7 +78,7 @@
 
         <h2>My previous projects..</h1>
 
-        <section class="project-list">
+        <section>
 
           <button onclick="projOneInfo()">
             <img 
@@ -144,12 +122,12 @@
       </article>
     </main>
 
-    <footer class="footer">
+    <footer>
       <p>Interested in my work?</p>
 
       <p>Here's some links to reach me:</p>
       
-      <ul class="icon-list">
+      <ul>
         <li>
           <a href="https://github.com/ejmoyer">
             <img

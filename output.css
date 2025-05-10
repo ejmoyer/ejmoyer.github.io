@@ -7,8 +7,18 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --spacing: 0.25rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-bold: 700;
+    --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-royal-eggplant: #4E3145;
+    --color-off-eggplant: #5e4356;
+    --color-jet-black: #1E1C1C;
   }
 }
 @layer base {
@@ -157,215 +167,121 @@
   }
 }
 @layer utilities {
-  .container {
+  .relative {
+    position: relative;
+  }
+  .bottom-8 {
+    bottom: calc(var(--spacing) * 8);
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .w-\[20vw\] {
+    width: 20vw;
+  }
+  .w-full {
     width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
   }
-  .table {
-    display: table;
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .flex-col {
+    flex-direction: column;
   }
-  .resize {
-    resize: both;
+  .items-center {
+    align-items: center;
   }
-  .border {
+  .justify-items-center {
+    justify-items: center;
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .border-4 {
     border-style: var(--tw-border-style);
-    border-width: 1px;
+    border-width: 4px;
+  }
+  .border-y-4 {
+    border-block-style: var(--tw-border-style);
+    border-block-width: 4px;
+  }
+  .border-r-4 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 4px;
+  }
+  .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
+  .border-off-eggplant {
+    border-color: var(--color-off-eggplant);
+  }
+  .bg-jet-black {
+    background-color: var(--color-jet-black);
+  }
+  .bg-royal-eggplant {
+    background-color: var(--color-royal-eggplant);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
+  }
+  .pt-36 {
+    padding-top: calc(var(--spacing) * 36);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
   }
   .text-center {
     text-align: center;
   }
-  .underline {
-    text-decoration-line: underline;
+  .font-mono {
+    font-family: var(--font-mono);
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
-}
-*, *::after, *::before {
-  padding: 0;
-  margin: 0;
-  font-family: 'Monaco', Helvetica, Courier, Arial;
-}
-main {
-  width: 100%;
-}
-a {
-  text-decoration: none;
-}
-.container {
-  align-items: center;
-  background-color: #32292f;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.container header h1 {
-  color: #fff4f4;
-}
-.container header p {
-  color: #F8F8FF;
-}
-.container h1 {
-  color: #000000;
-}
-.container p {
-  color: #000000;
-}
-.small-container {
-  margin: 0 auto;
-  background-color: #F8F8FF;
-  width: 90%;
-}
-.small-container h1 {
-  text-align: center;
-  padding: 1rem;
-}
-.preface {
-  padding: 0.5rem 4rem 4rem 4rem;
-  text-align: center;
-}
-.preface-heading {
-  padding-top: 4rem;
-  text-align: center;
-}
-.icon-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.icon-row img {
-  padding: 6px;
-}
-.knowledge-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.knowledge-col {
-  width: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 2rem 2rem 2rem;
-}
-.knowledge-col p {
-  font-style: oblique;
-  text-decoration: underline;
-  padding-bottom: 1rem;
-}
-.knowledge-col li {
-  list-style: none;
-  color: #000000;
-  text-align: center;
-}
-.knowledge-col img {
-  padding: 1rem;
-}
-.previous-projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #F8F8FF;
-}
-.previous-projects section button {
-  padding: .5rem;
-}
-.previous-projects h1, h2 {
-  padding: 4rem;
-}
-.project-list {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.footer {
-  padding: 4rem 0 0 0;
-  text-align: center;
-  width: 100%;
-  background-color: #F8F8FF;
-}
-.icon-list {
-  display: flex;
-  flex-direction: column;
-}
-.icon-list li {
-  list-style-type: none;
-}
-.icon-list li a img {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-#infoBox {
-  width: 100%;
-  align-items: center;
-  background-color: #32292f;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#infoBox h1, a {
-  color: #F8F8FF;
-  padding: 1rem;
-}
-#infoBox p {
-  color: #F8F8FF;
-  padding: 1rem;
-  text-align: center;
-  margin: 0 8rem 0 8rem;
-}
-@media only screen and (max-width: 800px) and (min-width: 451px) {
-  .project-list {
-    display: flex;
-    flex-direction: column;
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .italic {
+    font-style: italic;
   }
 }
-@media only screen and (max-width: 450px) {
-  .small-container .knowledge-row {
-    padding-top: 1rem;
-  }
-  .knowledge-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .project-list {
-    display: flex;
-    flex-direction: column;
-  }
+* {
+  color: #E9EBEB;
 }
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
 }
-@property --tw-outline-style {
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
-      --tw-outline-style: solid;
+      --tw-font-weight: initial;
     }
   }
 }
