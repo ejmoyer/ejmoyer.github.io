@@ -1,13 +1,14 @@
 {
-  "name": "build-tool-template",
+  "name": "developer-portfolio",
+  "private": "true",
   "version": "1.0.0",
-  "description": "A directory to practice build tools",
+  "description": "My portfolio to show to prospective employers.",
   "main": "index.html",
   "scripts": {
     "start": "gulp serve"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Eric Moyer",
+  "license": "UNLICENSED",
   "devDependencies": {
     "browser-sync": "^3.0.4",
     "gulp": "^5.0.0"
