@@ -4,17 +4,12 @@
   "description": "A directory to practice build tools",
   "main": "index.html",
   "scripts": {
-    "start": "gulp",
-    "html": "gulp html",
-    "css": "gulp css",
-    "lint": "gulp lint"
+    "start": "gulp serve"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^3.0.4",
-    "gulp": "^5.0.0",
-    "gulp-csslint": "^1.0.1",
-    "gulp-htmllint": "0.0.19"
+    "gulp": "^5.0.0"
   }
 }
